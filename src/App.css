@@ -1,24 +1,31 @@
-  .App-header {
-      background-color: #282c34;
-      min-height: 100px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-size: calc(10px + 2vmin);
-      color: white;
+
+  .FlexContainer{
+    display: flex;
+    justify-content: space-between;
   }
 
-  .Poke-header {
-        background-color: #282c34;
-        min-height: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-size: calc(10px + 2vmin);
-        color: white;
-    }
+  .PokeImage {
+    width: 40%
+  }
+
+  .PokemonData {
+    width: 55%
+  }
+
+  .PokemonData li {
+   text-transform: capitalize;
+  }
+
+  .App-header {
+    background-color: red;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+  }
 
   a {
    color: inherit;
@@ -26,7 +33,7 @@
   }
 
   body {
-    background-color: turquoise;
+    background-color: white;
   }
 
   .container {
