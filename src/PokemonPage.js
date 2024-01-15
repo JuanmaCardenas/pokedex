@@ -5,6 +5,7 @@ import PokemonCard from './PokemonCard';
 
 const PokemonPage = () => {
     const {id, name} = useParams();
+    const upperName = name.charAt(0).toUpperCase() + name.slice(1)
     const [pokemon, setPokemon] = useState({
         name: '',
         weight: 0,
@@ -41,7 +42,7 @@ const PokemonPage = () => {
                     <img src = {obtenerImagen(id)}/>
                 </div>
                 <div className= "PokemonData">
-                    <p><b>Name: </b>{pokemon.name}</p>
+                    <p><b>Name: </b>{upperName}</p>
                     <p><b>Weight: </b>{pokemon.weight}</p>
                     <p><b>Height: </b>{pokemon.height}</p>
                     <p><b>Base Experience: </b>{pokemon.base_experience}</p>
