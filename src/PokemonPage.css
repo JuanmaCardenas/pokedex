@@ -1,0 +1,17 @@
+
+.FlexContainer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .PokeImage {
+    width: 30%
+  }
+
+  .PokemonData {
+    width: 45%
+  }
+
+  .PokemonData li {
+   text-transform: capitalize;
+  }

@@ -1,7 +1,6 @@
-import './App.css';
+import './PokemonPage.css';
 import React, { useState, useEffect } from 'react';
 import {useParams} from 'react-router-dom'
-import PokemonCard from './PokemonCard';
 
 const PokemonPage = () => {
     const {id, name} = useParams();
@@ -43,8 +42,8 @@ const PokemonPage = () => {
                 </div>
                 <div className= "PokemonData">
                     <p><b>Name: </b>{upperName}</p>
-                    <p><b>Weight: </b>{pokemon.weight}</p>
-                    <p><b>Height: </b>{pokemon.height}</p>
+                    <p><b>Weight: </b>{pokemon.weight / 10} kg</p>
+                    <p><b>Height: </b>{pokemon.height / 10} m</p>
                     <p><b>Base Experience: </b>{pokemon.base_experience}</p>
                     <p><b>Basic Stats:</b></p>
                     <ul>

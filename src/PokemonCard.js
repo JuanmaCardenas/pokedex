@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
-import './App.css';
+import './PokemonCard.css';
 
 const PokemonCard = ({name, image, id}) => {
     return (

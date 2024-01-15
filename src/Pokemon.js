@@ -1,26 +1,36 @@
 import { useState, useEffect } from "react";
 import Header from './Header';
 import PokemonCard from './PokemonCard';
-import PokemonPage from './PokemonPage';
-import './App.css';
+import './Pokemon.css';
+import SearchBar from './SearchBar'
 
 
 const Pokemon = () => {
     const [pokemons, setPokemons] = useState([]);
+    const [searchText, setSearchText] = useState('');
 
-     useEffect(() => {
+    useEffect(() => {
         fetch('https://pokeapi.co/api/v2/pokemon?limit=800')
          .then(response => response.json())
          .then(data => {setPokemons(data.results);
         })
-     }, []);
+    }, []);
+
+    const handleSearch = (text) => {
+        setSearchText(text);
+    };
+
+    const filteredPokemons = pokemons.filter((pokemon) => {
+        return pokemon.name.toLowerCase().includes(searchText.toLowerCase());
+     });
 
      return (
             <div className ="App">
                 <Header />
+                <SearchBar onSearch= {handleSearch}/>
                 {
                     <div className = "container">
-                        {pokemons.map((pokemon) => (
+                        {filteredPokemons.map((pokemon) => (
                             <PokemonCard name = {pokemon.name} image ={obtenerImagen(pokemon.url)} id = {obtenerID(pokemon.url)} />
                         ))}
                     </div>
