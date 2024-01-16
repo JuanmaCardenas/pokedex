@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    background-color: rgb(238, 235, 235);
+    border-radius: 500px 500px 500px 500px;
+    box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
   .item img {
@@ -22,8 +25,5 @@
      margin: 10px 0;
      font-size: 18px;
      text-align: center;
+     text-transform: capitalize;
    }
-
-   .item h2::first-letter {
-        text-transform: uppercase;
-   };

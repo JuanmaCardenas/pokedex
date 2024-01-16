@@ -11,7 +11,7 @@ const SearchBar = ({onSearch}) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         onSearch(searchText);
-    }
+    };
 
     return (
         <div className="search-container">

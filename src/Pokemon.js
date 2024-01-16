@@ -3,6 +3,7 @@ import Header from './Header';
 import PokemonCard from './PokemonCard';
 import './Pokemon.css';
 import SearchBar from './SearchBar'
+import ComboBox from "./ComboBox";
 
 
 const Pokemon = () => {
@@ -10,7 +11,7 @@ const Pokemon = () => {
     const [searchText, setSearchText] = useState('');
 
     useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=800')
+        fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
          .then(response => response.json())
          .then(data => {setPokemons(data.results);
         })
