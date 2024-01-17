@@ -3,15 +3,15 @@ import Header from './Header';
 import PokemonCard from './PokemonCard';
 import './Pokemon.css';
 import SearchBar from './SearchBar'
-import ComboBox from "./ComboBox";
-
+import {useParams} from 'react-router-dom'
 
 const Pokemon = () => {
     const [pokemons, setPokemons] = useState([]);
     const [searchText, setSearchText] = useState('');
+    const {id} = useParams();
 
     useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+        fetch(`https://pokeapi.co/api/v2/pokemon?limit=${id}`)
          .then(response => response.json())
          .then(data => {setPokemons(data.results);
         })

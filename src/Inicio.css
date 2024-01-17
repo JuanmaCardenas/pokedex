@@ -1,0 +1,17 @@
+.Inicio{
+    background-image: url('./fondo.png');
+    background-size: contain;
+    width: 100%;
+    height: 17hv;
+    padding-bottom: 18%;
+    position: relative;
+}
+
+.Dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+

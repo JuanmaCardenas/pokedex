@@ -1,12 +1,14 @@
-import React from 'react'
-import ComboBox from './ComboBox';
+import DropDownMenu from "./DropDownMenu";
+import Header from './Header'
+import './Inicio.css'
 
-const Inicio = () => {
+const Inicio = () =>{
+    return(
+        <div className="Inicio">
+            <Header />
+            <div className="Dropdown"><DropDownMenu /></div>
+        </div>
+    );
+}
 
-        return(
-            <ComboBox />
-        );
-
-};
-
-export default Inicio;
+export default Inicio

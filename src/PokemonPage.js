@@ -34,7 +34,9 @@ const PokemonPage = () => {
     return (
         <div className = "PokePage">
             <div className = "App-header">
-                <header><h1>About this Pokemon!</h1></header>
+                <header>
+                    <h1 className="App-header-title">About this Pokemon!</h1>
+                </header>
             </div>
             <div className = "PokeInfo FlexContainer">
                 <div className = "PokeImage">
