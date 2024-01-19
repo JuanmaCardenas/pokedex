@@ -1,7 +1,7 @@
 import './App.css';
-import Inicio from './Inicio.js';
-import Pokemon from './Pokemon.js'
-import PokemonPage from './PokemonPage.js'
+import Inicio from './Components/Inicio.js';
+import Pokemon from './Components/Pokemon.js'
+import PokemonPage from './Components/PokemonPage.js'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 const App = () => {

@@ -14,7 +14,9 @@ const DropDownMenu = () => {
           <Dropdown.Item className="custom-dropdown-item" href="/pokedex/649">5th Generation</Dropdown.Item>
           <Dropdown.Item className="custom-dropdown-item" href="/pokedex/721">6th Generation</Dropdown.Item>
           <Dropdown.Item className="custom-dropdown-item" href="/pokedex/809">7th Generation</Dropdown.Item>
-          <Dropdown.Item className="custom-dropdown-item" href="/pokedex/898">8th Generation</Dropdown.Item>
+          <Dropdown.Item className="custom-dropdown-item" href="/pokedex/905">8th Generation</Dropdown.Item>
+          <Dropdown.Item className="custom-dropdown-item" href="/pokedex/1025">9th Generation</Dropdown.Item>
+          <Dropdown.Item className="custom-dropdown-item" href="/pokedex/9999">Show all</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     );

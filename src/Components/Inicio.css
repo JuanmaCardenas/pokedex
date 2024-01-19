@@ -1,10 +1,8 @@
 .Inicio{
-    background-image: url('./fondo.png');
+    background-image: url('../fondo.png');
     background-size: contain;
-    width: 100%;
-    height: 17hv;
-    padding-bottom: 18%;
-    position: relative;
+    background-repeat: no-repeat;
+    padding-bottom: 100vh;
 }
 
 .Dropdown {

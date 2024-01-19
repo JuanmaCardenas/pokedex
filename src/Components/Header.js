@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import pokeball from './pokeball.png'
+import pokeball from '../pokeball.png'
 
 function Header() {
  return (
