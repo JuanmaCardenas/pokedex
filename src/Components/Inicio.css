@@ -3,6 +3,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     padding-bottom: 100vh;
+    display: block;
 }
 
 .Dropdown {

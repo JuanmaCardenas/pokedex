@@ -9,7 +9,7 @@ const App = () => {
         <Router>
             <Routes>
                 <Route exact path='/' element = {<Inicio />}/>
-                <Route exact path='/pokedex/:id' element = {<Pokemon />}/>
+                <Route exact path='/:limit/to/:to' element = {<Pokemon />}/>
                 <Route exact path='/pokemon/:id/:name' element = {<PokemonPage />} />
             </Routes>
         </Router>

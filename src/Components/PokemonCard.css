@@ -11,6 +11,10 @@
     box-shadow: 10px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
+  .item:hover{
+    background-color: rgb(196, 196, 196);
+  }
+
   .item img {
     width: 100%;
     height: auto;
